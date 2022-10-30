@@ -4,42 +4,61 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 25px;
 }
 
-.container {
-    display: flex;
-}
 
 .sidebar {
-    background-color: rgb(156, 156, 156);
-    height: 100vh;
-    width: 10vw;
+    position: fixed;
     font-family: 'Karla', sans-serif;
     font-weight: bold;
+    transition: transform 0.3s ease-in;
 }
-.sidebar li a{
+
+.sidebar li a {
     list-style: none;
+    text-decoration: none;
 }
-.sidebar li a:hover{
-    color:red;
+
+.sidebar li a:hover {
+    color: red;
 }
+
 .sidebar nav {
     padding: 17px;
+    background-color: rgb(156, 156, 156);
+    margin-top: -148px;
+    height: 100vh;
 }
 
 .sidebar nav li {
     list-style: none;
-    font-size: 28px;
+    font-size: 1.4em;
     padding: 33px 0;
 }
 
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.cross {
+    padding-left: 120px;
+}
+
 .main {
-    /* background-color: blue; */
     width: 90vw;
 }
 
 .info {
-    /* background-color: green; */
     height: 50vh;
     width: 80vw;
     margin: 144px auto;
@@ -52,22 +71,84 @@
     flex-direction: column;
     justify-content: center;
     font-family: 'Source Code Pro', monospace;
+    margin-left: 7vw;
 }
 
 .hello {
-    font-size: 65px;
+    font-size: 3em;
 }
 
 .name {
-    font-size: 50px;
+    font-size: 2.5em;
     font-weight: bold;
     font-family: 'Karla', sans-serif;
 }
 
 .about {
-    font-size: 20px;
+    padding: 1.5em;
+    font-size: 1em;
 }
 
-.devPic {
-    height: 50vh;
+.devPic img {
+    height: 60vh;
+}
+
+
+.skills {
+    margin: 30px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+
+.skills li {
+    list-style: none;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.skills h1 {
+    color: orange;
+    font-size: 3em;
+}
+
+.skills hr {
+    border: 0.25px solid black;
+    margin-bottom: 30px;
+}
+
+.skills img {
+    margin-top: 15px;
+    height: 78px;
+}
+
+.back {
+    position: fixed;
+    margin-top: 75vh;
+    margin-left: 95vw;
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    background-color: rgb(68, 68, 68);
+    padding-top: 10px;
+}
+
+.footer img {
+    width: 40px;
+}
+
+.footer a {
+    padding: 20px;
+}
+
+
+@media (max-width: 847px) {
+    .devPic {
+        display: none;
+    }
 }

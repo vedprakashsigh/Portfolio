@@ -11,56 +11,90 @@
 
 <body>
     <div class="container">
-        <div class="sidebar">
-            <nav>
+        <div class="back">
+            <a href="#home" title="Back to Top"><img src="/assets/up.png" alt="Back to Top"></a>
+        </div>
+        <a name="home"></a>
+        <div class="sidebar sidebarGo">
+            <nav class="nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
         </div>
         <div class="main">
+            <div class="hamburger">
+                <div class="ham"><img src="/assets/ham.png" alt="" width=23px></div>
+                <div class="cross"><img src="/assets/cross.png" alt="" width=23px></div>
+            </div>
             <div class="info">
                 <div class="devInfo">
                     <div class="hello">Hi, I am</div>
                     <div class="name">Ved Prakash</div>
                 </div>
                 <div class="devPic"><img src="/assets/devPic.png" alt="Ved Prakash"></div>
-            </div>
-
+            </div> <br><br><br><br><br><br><br><br>
+            <a name="about"></a>
             <div class="about">
                 <h2>About Me</h2>
                 <p>A short intro about me. I live in Lucknow and I grew up here. Currently I am studying Electrical and
                     Electronics Engineering from BIT Mesra, Ranchi. I'm really into Science and Technology. I constantly
-                    try to learn and improve my skills.<br>
-                    I did my schooling from Motilal Nehru Public School,Jamshedpur. Computer Science,Mathematics and
+                    try to learn and improve my skills.<br> <br>
+                    I did my schooling from Central Academy, Lucknow. Computer Science, Mathematics and
                     Physics were my favorite subjects in High school. This interest in programming led me to persue a
                     technical degree, particularly software engineering.</p>
             </div>
+            <a name="skill"></a>
+            <div class="skills">
+                <h1>My Skills</h1>
+                <hr> 
+                <table>
+                    <ul>
+                        <li>
+                            Languages:
+                                <img src="/assets/py.svg" alt="Python">
+                                <img src="/assets/C.svg" alt="C">
+                                <img src="/assets/c++.svg" alt="C++">
+                                <img src="/assets/html.svg" alt="HTML">
+                                <img src="/assets/css.svg" alt="CSS">
+                                <img src="/assets/js.svg" alt="JavaScript">
+                        </li>
+                        <li>
+                            Tools:
+                                <img src="/assets/github-icon.svg" alt="GitHub">
+                                <img src="/assets/vscode.svg" alt="VSCode">
+                                <img src="/assets/pycharm.svg" alt="Pycharm">
+                        </li>
+                    </ul>
+                </table>
+            </div>
         </div>
-        <!-- <div class="footer">
+        <a name="contact"></a>
+        <div class="footer">
             <footer>
                 <h2 id="footer-social-media">Social Media Handles</h2>
-                <nav class="footer navbar">
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/vedprakashsigh"><img src="/assets/linkedin-icon.svg"
-                                    class="footer-img"></a></li>
-                        <li><a href="https://www.github.com/vedprakashsigh"><img src="/assets/github-icon.svg"
-                                    class="footer-img"></a></li>
-                        <li><a href="https://www.facebook.com/vedprakashsigh"><img src="/assets/fb-icon.svg"
-                                    class="footer-img"></a></li>
-                        <li><a href="https://www.instagram.com/vedprakashsigh"><img src="/assets/insta-icon.svg"
-                                    class="footer-img"></a></li>
-                        <li><a href="mailto:vedprakashsigh@gmail.com"><img src="/assets/gmail-icon.svg"
-                                    class="footer-img"></a></li>
-                    </ul>
+                <nav class="footer">
+                    
+                        <a target="_blank" href="https://www.linkedin.com/in/vedprakashsigh"><img src="/assets/linkedin-icon.svg"
+                                    class="footer-img"></a>
+                        <a target="_blank" href="https://www.github.com/vedprakashsigh"><img src="/assets/github-icon.svg"
+                                    class="footer-img"></a>
+                        <a target="_blank" href="https://www.facebook.com/vedprakashsigh"><img src="/assets/fb-icon.svg"
+                                    class="footer-img"></a>
+                        <a target="_blank" href="https://www.instagram.com/vedprakashsigh"><img src="/assets/insta-icon.svg"
+                                    class="footer-img"></a>
+                        <a target="_blank" href="mailto:vedprakashsigh@gmail.com"><img src="/assets/gmail-icon.svg"
+                                    class="footer-img"></a>
+                   
                 </nav>
             </footer>
-        </div> -->
+        </div>
     </div>
+<script src="script.js"></script>
 </body>
 
 </html>
