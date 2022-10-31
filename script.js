@@ -29,13 +29,3 @@ document.querySelector(".hamburger").addEventListener("click", () => {
     }, 300);
   }
 });
-
-// Back to Top disapper when at top
-window.addEventListener("scroll", function (event) {
-  var scroll_y = this.scrollY;
-  if (scroll_y < 300) {
-    document.querySelector("#position").style.display = "none";
-  } else {
-    document.querySelector("#position").style.display = "inline";
-  }
-});
