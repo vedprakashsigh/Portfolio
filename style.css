@@ -7,10 +7,6 @@
     font-size: 25px;
 }
 
-body {
-    background-color: lightgreen;
-}
-
 h1 {
     color: orange;
     font-size: 3em;
@@ -179,10 +175,7 @@ hr {
 }
 
 .mode {
-    display: absolute;
-    font-size: 1vw;
-    right: 0;
-    top: 0;
+    font-size: 15px;
 }
 
 @media (max-width: 847px) {
