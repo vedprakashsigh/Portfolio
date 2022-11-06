@@ -7,6 +7,10 @@
     font-size: 25px;
 }
 
+body {
+    background-color: lightgreen;
+}
+
 h1 {
     color: orange;
     font-size: 3em;
@@ -27,6 +31,7 @@ hr {
 .sidebar li a {
     list-style: none;
     text-decoration: none;
+    color: wheat;
 }
 
 .sidebar li a:hover {
@@ -35,7 +40,7 @@ hr {
 
 .sidebar nav {
     padding: 17px;
-    background-color: rgb(156, 156, 156);
+    background-color: rgb(0, 0, 0);
     margin-top: -148px;
     height: 100vh;
 }
@@ -60,7 +65,11 @@ hr {
 }
 
 .cross {
-    padding-left: 120px;
+    margin-left: 120px;
+}
+
+.cross img{
+    width: 32px;
 }
 
 .main {
@@ -143,7 +152,7 @@ hr {
 
 .projects a{
     text-decoration: none;
-    color: aqua;
+    color: blue;
 }
 
 .projects a:hover{
@@ -169,6 +178,12 @@ hr {
     padding: 20px;
 }
 
+.mode {
+    display: absolute;
+    font-size: 1vw;
+    right: 0;
+    top: 0;
+}
 
 @media (max-width: 847px) {
     .devPic {

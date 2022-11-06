@@ -7,12 +7,12 @@ const currentTime = current.toLocaleTimeString("en-US", {
 
 if (currentTime < "19") {
   // Light Mode
-  document.querySelector(".nav").style.backgroundColor = "#5F5F5F";
-  document.querySelector("body").style.backgroundColor = "#9C9C9C";
+  document.querySelector("body").style.backgroundColor = "#90ee90";
+  document.querySelector(".mode").innerHTML = "Currently Viewing this page in Light Mode.";
 } else {
   // Dark Mode
-  document.querySelector(".nav").style.backgroundColor = "#9C9C9C";
-  document.querySelector("body").style.backgroundColor = "#5F5F5F";
+  document.querySelector("body").style.backgroundColor = "#008000";
+  document.querySelector(".mode").innerHTML = "Currently Viewing this page in Dark Mode.";
 }
 
 // Hamburger Operation
